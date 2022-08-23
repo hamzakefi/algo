@@ -1,0 +1,23 @@
+ALGORITHM sum-array
+VAR
+    set1,set2: array_name : ARRAY_OF INTEGER[5];
+sum:INTEGER:=0;
+i,j:integer;
+BEGIN
+    FOR i FROM 0 TO set1.length  DO
+    FOR j FROM 0 TO set2.length  DO
+        IF (set1[i]!==set2[i]) THEN
+            sum:=sum+set1[i]
+        END_IF
+    END_FOR
+    END_FOR
+    FOR j FROM 0 TO set2.length  DO
+    FOR i FROM 0 TO set1.length  DO
+        IF (set1[j] !== set2[i]) THEN
+            sum:=sum+ set2[j]
+        END_IF
+    END_FOR
+        
+    END_FOR
+    write(sum)
+END
