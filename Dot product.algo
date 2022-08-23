@@ -1,0 +1,55 @@
+ALGORITHM Dot product
+
+VAR
+n:integer;
+ v1: ARRAY_OF integer[n];
+ v2: ARRAY_OF integer[n];
+
+    
+BEGIN
+REPEAT
+    read(n)
+    
+UNTIL (mod%2==0)
+FOR i FROM 0 TO n  1  DO
+
+   
+
+    read(v1[i])
+    
+    read(v2[i])
+    
+END_FOR
+
+PROCEDURE dot_product(v1,v2:array;n:integer;)
+VAR
+   i,j:integer;
+BEGIN
+FOR i FROM 0 TO n  1  DO
+FOR j FROM 0 TO n   DO
+    IF (v[i]*v2[j]==0) THEN
+        write(orthogonaux) 
+        
+    ELSE
+
+    write(v[i]*v2[j])
+    END_IF
+END
+    
+
+
+FUNCTION dot_product(v1,v2:array;n:integer;) : integer
+
+VAR
+   i,j:integer;
+BEGIN
+FOR i FROM 0 TO n  1  DO
+FOR j FROM 0 TO n   DO
+    IF (v[i]*v2[j]==0) THEN
+       return(0) 
+        
+    ELSE
+
+   return(v[i]*v2[j])
+    END_IF
+END
