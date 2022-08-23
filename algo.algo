@@ -1,0 +1,23 @@
+ALGORITHM exercice
+VAR
+nb:INTEGER;
+ch:STRING;
+c:char;
+    begin
+    NB:=0;
+    VOY:=0;
+    mot:=0;
+    REPEAT
+    read(c)
+    ch:=ch+c
+     nb:=nb+1
+    UNTIL (c=='.')
+
+FOR i FROM 0 TO nb  DO   
+    if ch[i] in [a.u.o.i.e.y.A.U.O.I.E.Y]
+    VOY:=VOY+1
+    if ch[i]+1 ==' '
+        mot:=mot+1
+END_FOR
+
+END
