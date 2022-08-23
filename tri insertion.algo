@@ -1,0 +1,20 @@
+ALGORITHM triinsertion
+VAR
+t  : ARRAY_OF integer[length];
+i : integer
+j : integer
+k : integer
+BEGIN
+j:=2
+WHILE j<=longueur(t):   
+  i:=j-1
+  k:=t[j]
+  WHILE i>0 and t[i]>k:   
+    t[i+1]:=t[i]
+    i:=i-1
+ END WHILE 
+  t[i+1]:=k
+  j:=j+1
+END WHILE 
+
+END
